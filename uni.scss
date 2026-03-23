@@ -1,0 +1,79 @@
+/* uni-mall 全局 SCSS 变量 */
+
+// ==================== 颜色 ====================
+$primary: #FF5000;           // 主色调（淘宝橙）
+$primary-light: #FF8C00;     // 主色调浅色
+$primary-dark: #E64500;      // 主色调深色
+$primary-bg: #FFF5F0;        // 主色调背景
+
+$success: #4CAF50;
+$warning: #FF9800;
+$error: #F44336;
+$info: #2196F3;
+
+$text-primary: #333333;      // 主文字
+$text-secondary: #666666;    // 副文字
+$text-disabled: #999999;     // 弱文字
+$text-placeholder: #BBBBBB;  // 占位文字
+$text-white: #ffffff;
+
+$bg-page: #F5F5F5;           // 页面背景
+$bg-white: #ffffff;          // 白色背景
+$bg-light: #FAFAFA;          // 浅灰背景
+
+$border-color: #EEEEEE;      // 边框颜色
+$divider-color: #F0F0F0;     // 分割线颜色
+
+// ==================== 间距 ====================
+$spacing-xs: 8rpx;
+$spacing-sm: 16rpx;
+$spacing-md: 24rpx;
+$spacing-lg: 32rpx;
+$spacing-xl: 48rpx;
+
+// ==================== 圆角 ====================
+$radius-sm: 6rpx;
+$radius-md: 12rpx;
+$radius-lg: 20rpx;
+$radius-pill: 50rpx;
+$radius-circle: 50%;
+
+// ==================== 字体大小 ====================
+$font-xs: 18rpx;
+$font-sm: 22rpx;
+$font-base: 26rpx;
+$font-md: 28rpx;
+$font-lg: 32rpx;
+$font-xl: 36rpx;
+$font-2xl: 44rpx;
+
+// ==================== 阴影 ====================
+$shadow-sm: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8rpx 24rpx rgba(0, 0, 0, 0.15);
+
+// ==================== 常用Mixin ====================
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
