@@ -1,0 +1,35 @@
+# 依赖目录
+node_modules/
+
+# UniApp 编译生成的文件
+unpackage/
+dist/
+
+# 本地环境文件
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE 或编辑器文件
+.vscode/
+.idea/
+.hbuilderx/
+*.swp
+*.swo
+*.iml
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.bak
+
+# 本地配置文件
+manifest.local.json
